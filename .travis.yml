@@ -1,7 +1,6 @@
 language: python
 
-build_image: shippable/minv2
-#vauxoo/odoo-80-image-shippable-auto
+build_image: vauxoo/odoo-80-image-shippable-auto
 # commit_container: cowardvassal/vauxoo-dev
 
 python:
@@ -28,3 +27,5 @@ script:
   - travis_run_tests ${VERSION}
 
 
+notifications:
+   email: false
