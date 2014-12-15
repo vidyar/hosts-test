@@ -22,10 +22,9 @@ install:
   - travis_install_nightly
 
 
-#test pr
+#test pr in prod
 script:
   - travis_run_tests ${VERSION}
-
 
 notifications:
    email: false
